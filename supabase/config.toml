@@ -1,0 +1,7 @@
+[functions.grokbot-relay]
+verify_jwt = true
+
+# The inbox is called by the Cursor Automation, which has no user session.
+# It authenticates with the x-grokbot-secret header instead.
+[functions.grokbot-inbox]
+verify_jwt = false
